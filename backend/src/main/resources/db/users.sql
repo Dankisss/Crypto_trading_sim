@@ -1,0 +1,8 @@
+CREATE TABLE USERS(
+    id SERIAL PRIMARY KEY,
+    name VARCHAR(30),
+    email VARCHAR(100) UNIQUE,
+    password_hash VARCHAR(50),
+    balance NUMERIC(10, 2) DEFAULT 10000.00,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
